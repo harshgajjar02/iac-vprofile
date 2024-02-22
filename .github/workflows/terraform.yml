@@ -73,7 +73,7 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
      
-        # getting kubeconfig file 
+        # getting kubeconfig file
       - name: Get Kube config file
         id: getconfig
         if: steps.apply.outcome == 'success'
